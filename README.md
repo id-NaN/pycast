@@ -8,5 +8,5 @@ a simple raycaster written in python including a map overwiew
 ## usage
 * wasd to control,
 * shift to run,
-* ctrl to disable map overview,
+* ctrl to toggle map overview,
 * esc to close
