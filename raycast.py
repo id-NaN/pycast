@@ -212,15 +212,15 @@ window_cooldown = 0
 
 while True:
 	for event in pygame.event.get():
-		if event.type == 12:
+		if event.type == pygame.QUIT:
 			pygame.quit()
 			sys.exit()
-		elif event.type == 2:
+		elif event.type == pygame.KEYDOWN:
 			if event.key in keys.keys():
 				pressed_keys[keys[event.key]] = True
 			else:
 				print(event.key)
-		elif event.type == 3:
+		elif event.type == pygame.KEYUP:
 			if event.key in keys.keys():
 				pressed_keys[keys[event.key]] = False
 		else:
